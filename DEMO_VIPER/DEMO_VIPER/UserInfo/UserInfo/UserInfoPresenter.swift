@@ -5,4 +5,11 @@ class UserInfoPresenter: VIPERPresenter {
     var userInfoDescription: String {
         return "UserName: \(interactor.userName), Age: \(interactor.userAge)"
     }
+    
+    func retriveUserInfoDetails() {
+        weak var strongSelf = self
+        interactor.retriveUserInfoDetails { 
+            strongSelf?.statusDidChanged?()
+        }
+    }
 }

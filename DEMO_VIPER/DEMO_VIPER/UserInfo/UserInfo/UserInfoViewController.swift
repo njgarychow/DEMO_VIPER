@@ -3,6 +3,7 @@ import UIKit
 class UserInfoViewController: UIViewController, VIPERView {
     
     @IBOutlet weak var userInfoLabel: UILabel!
+    @IBOutlet weak var retriveUserInfoDetailsButton: UIButton!
     
     typealias Presenter = UserInfoPresenter
     var presenter: UserInfoPresenter! = UserInfoPresenter()
@@ -13,9 +14,13 @@ class UserInfoViewController: UIViewController, VIPERView {
     
     override func viewDidLoad() {
         self.binding(presenter: presenter)
-        
         statusDidChanged()
+        
+        retriveUserInfoDetailsButton.addTarget(self, action: #selector(retriveUserInfoDetailsButtonClicked), for: .touchUpInside)
     }
     
+    @objc func retriveUserInfoDetailsButtonClicked() {
+        presenter.retriveUserInfoDetails()
+    }
 }
 

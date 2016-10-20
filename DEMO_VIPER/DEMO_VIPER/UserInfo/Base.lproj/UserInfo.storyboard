@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,17 +19,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38x-Vz-nYa" userLabel="UserInfoLabel">
-                                <frame key="frameInset" minX="16" minY="216" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="38x-Vz-nYa" userLabel="UserInfoLabel">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs5-n5-O5p">
+                                <state key="normal" title="Retrive More"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xs5-n5-O5p" firstAttribute="centerX" secondItem="38x-Vz-nYa" secondAttribute="centerX" id="38i-H6-Oez"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="38x-Vz-nYa" secondAttribute="trailing" id="5Zx-dq-ihO"/>
+                            <constraint firstItem="xs5-n5-O5p" firstAttribute="top" secondItem="38x-Vz-nYa" secondAttribute="bottom" constant="35" id="6Jw-8G-K85"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="38x-Vz-nYa" secondAttribute="leading" id="QpQ-bo-0NA"/>
+                            <constraint firstItem="38x-Vz-nYa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="196" id="RjF-L4-4fc"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="retriveUserInfoDetailsButton" destination="xs5-n5-O5p" id="pcY-J4-TwA"/>
                         <outlet property="userInfoLabel" destination="38x-Vz-nYa" id="fiX-Vb-gCf"/>
                     </connections>
                 </viewController>
