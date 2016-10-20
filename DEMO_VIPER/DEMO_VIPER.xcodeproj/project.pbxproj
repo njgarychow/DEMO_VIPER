@@ -14,6 +14,8 @@
 		40B580FC1DB8619900ED06CF /* VIPERView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B580FB1DB8619900ED06CF /* VIPERView.swift */; };
 		40B581001DB891AE00ED06CF /* VIPERPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B580FF1DB891AE00ED06CF /* VIPERPresenter.swift */; };
 		40B581071DB89C8600ED06CF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B581061DB89C8600ED06CF /* UserInfoViewController.swift */; };
+		40B581091DB8AB8300ED06CF /* UserInfoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B581081DB8AB8300ED06CF /* UserInfoPresenter.swift */; };
+		40B5810B1DB8AFDD00ED06CF /* UserInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5810A1DB8AFDD00ED06CF /* UserInfoInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		40B580FB1DB8619900ED06CF /* VIPERView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPERView.swift; sourceTree = "<group>"; };
 		40B580FF1DB891AE00ED06CF /* VIPERPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPERPresenter.swift; sourceTree = "<group>"; };
 		40B581061DB89C8600ED06CF /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		40B581081DB8AB8300ED06CF /* UserInfoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoPresenter.swift; sourceTree = "<group>"; };
+		40B5810A1DB8AFDD00ED06CF /* UserInfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				40B581061DB89C8600ED06CF /* UserInfoViewController.swift */,
+				40B581081DB8AB8300ED06CF /* UserInfoPresenter.swift */,
+				40B5810A1DB8AFDD00ED06CF /* UserInfoInteractor.swift */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				406391EB1DB74A8000CAF721 /* AppDelegate.swift in Sources */,
+				40B5810B1DB8AFDD00ED06CF /* UserInfoInteractor.swift in Sources */,
+				40B581091DB8AB8300ED06CF /* UserInfoPresenter.swift in Sources */,
 				40B581001DB891AE00ED06CF /* VIPERPresenter.swift in Sources */,
 				40B581071DB89C8600ED06CF /* UserInfoViewController.swift in Sources */,
 				40B580FC1DB8619900ED06CF /* VIPERView.swift in Sources */,

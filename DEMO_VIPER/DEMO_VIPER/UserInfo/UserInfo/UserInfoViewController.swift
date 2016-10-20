@@ -1,17 +1,17 @@
 import UIKit
 
-class UserInfoViewController: UIViewController {
+class UserInfoViewController: UIViewController, VIPERView {
+    
+    typealias Presenter = UserInfoPresenter
+    var presenter: UserInfoPresenter! = UserInfoPresenter()
 
+    func statusDidChanged() {
+        
+    }
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.binding(presenter: presenter)
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
+    
 }
 
