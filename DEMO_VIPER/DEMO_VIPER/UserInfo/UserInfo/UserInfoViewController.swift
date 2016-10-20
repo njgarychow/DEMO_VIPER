@@ -1,14 +1,6 @@
-//
-//  ViewController.swift
-//  DEMO_VIPER
-//
-//  Created by jqzhou  on 10/19/16.
-//  Copyright © 2016 thoughtworks. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class UserInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

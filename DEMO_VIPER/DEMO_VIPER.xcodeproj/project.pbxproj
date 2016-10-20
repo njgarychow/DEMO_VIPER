@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		406391EB1DB74A8000CAF721 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406391EA1DB74A8000CAF721 /* AppDelegate.swift */; };
-		406391ED1DB74A8000CAF721 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406391EC1DB74A8000CAF721 /* ViewController.swift */; };
-		406391F01DB74A8000CAF721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406391EE1DB74A8000CAF721 /* Main.storyboard */; };
+		406391F01DB74A8000CAF721 /* UserInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406391EE1DB74A8000CAF721 /* UserInfo.storyboard */; };
 		406391F21DB74A8000CAF721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406391F11DB74A8000CAF721 /* Assets.xcassets */; };
 		406391F51DB74A8000CAF721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406391F31DB74A8000CAF721 /* LaunchScreen.storyboard */; };
 		40B580FC1DB8619900ED06CF /* VIPERView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B580FB1DB8619900ED06CF /* VIPERView.swift */; };
 		40B581001DB891AE00ED06CF /* VIPERPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B580FF1DB891AE00ED06CF /* VIPERPresenter.swift */; };
+		40B581071DB89C8600ED06CF /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B581061DB89C8600ED06CF /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		406391E71DB74A8000CAF721 /* DEMO_VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DEMO_VIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		406391EA1DB74A8000CAF721 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		406391EC1DB74A8000CAF721 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		406391EF1DB74A8000CAF721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		406391EF1DB74A8000CAF721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserInfo.storyboard; sourceTree = "<group>"; };
 		406391F11DB74A8000CAF721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		406391F41DB74A8000CAF721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		406391F61DB74A8000CAF721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40B580FB1DB8619900ED06CF /* VIPERView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPERView.swift; sourceTree = "<group>"; };
 		40B580FF1DB891AE00ED06CF /* VIPERPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPERPresenter.swift; sourceTree = "<group>"; };
+		40B581061DB89C8600ED06CF /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +58,12 @@
 		406391E91DB74A8000CAF721 /* DEMO_VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				40B581031DB89C6700ED06CF /* UserInfo */,
 				40B580FA1DB770DE00ED06CF /* VIPER */,
 				406391EA1DB74A8000CAF721 /* AppDelegate.swift */,
-				406391EC1DB74A8000CAF721 /* ViewController.swift */,
-				406391EE1DB74A8000CAF721 /* Main.storyboard */,
 				406391F11DB74A8000CAF721 /* Assets.xcassets */,
-				406391F31DB74A8000CAF721 /* LaunchScreen.storyboard */,
 				406391F61DB74A8000CAF721 /* Info.plist */,
+				406391F31DB74A8000CAF721 /* LaunchScreen.storyboard */,
 			);
 			path = DEMO_VIPER;
 			sourceTree = "<group>";
@@ -72,10 +71,35 @@
 		40B580FA1DB770DE00ED06CF /* VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				40B580FB1DB8619900ED06CF /* VIPERView.swift */,
 				40B580FF1DB891AE00ED06CF /* VIPERPresenter.swift */,
+				40B580FB1DB8619900ED06CF /* VIPERView.swift */,
 			);
 			path = VIPER;
+			sourceTree = "<group>";
+		};
+		40B581031DB89C6700ED06CF /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				406391EE1DB74A8000CAF721 /* UserInfo.storyboard */,
+				40B581041DB89C6700ED06CF /* UserInfo */,
+				40B581051DB89C6700ED06CF /* UserInfoDetails */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		40B581041DB89C6700ED06CF /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				40B581061DB89C8600ED06CF /* UserInfoViewController.swift */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		40B581051DB89C6700ED06CF /* UserInfoDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserInfoDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +163,7 @@
 			files = (
 				406391F51DB74A8000CAF721 /* LaunchScreen.storyboard in Resources */,
 				406391F21DB74A8000CAF721 /* Assets.xcassets in Resources */,
-				406391F01DB74A8000CAF721 /* Main.storyboard in Resources */,
+				406391F01DB74A8000CAF721 /* UserInfo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,9 +174,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				406391ED1DB74A8000CAF721 /* ViewController.swift in Sources */,
 				406391EB1DB74A8000CAF721 /* AppDelegate.swift in Sources */,
 				40B581001DB891AE00ED06CF /* VIPERPresenter.swift in Sources */,
+				40B581071DB89C8600ED06CF /* UserInfoViewController.swift in Sources */,
 				40B580FC1DB8619900ED06CF /* VIPERView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,12 +184,13 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		406391EE1DB74A8000CAF721 /* Main.storyboard */ = {
+		406391EE1DB74A8000CAF721 /* UserInfo.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				406391EF1DB74A8000CAF721 /* Base */,
 			);
-			name = Main.storyboard;
+			name = UserInfo.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		406391F31DB74A8000CAF721 /* LaunchScreen.storyboard */ = {
@@ -174,6 +199,7 @@
 				406391F41DB74A8000CAF721 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
