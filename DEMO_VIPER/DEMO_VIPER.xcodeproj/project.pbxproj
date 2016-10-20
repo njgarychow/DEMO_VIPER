@@ -88,10 +88,10 @@
 		40B581031DB89C6700ED06CF /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				406391EE1DB74A8000CAF721 /* UserInfo.storyboard */,
-				40B5810E1DB8B66500ED06CF /* UserInfoRouter.swift */,
 				40B581041DB89C6700ED06CF /* UserInfo */,
 				40B581051DB89C6700ED06CF /* UserInfoDetails */,
+				406391EE1DB74A8000CAF721 /* UserInfo.storyboard */,
+				40B5810E1DB8B66500ED06CF /* UserInfoRouter.swift */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
@@ -99,10 +99,10 @@
 		40B581041DB89C6700ED06CF /* UserInfo */ = {
 			isa = PBXGroup;
 			children = (
-				40B581061DB89C8600ED06CF /* UserInfoViewController.swift */,
-				40B581081DB8AB8300ED06CF /* UserInfoPresenter.swift */,
-				40B5810A1DB8AFDD00ED06CF /* UserInfoInteractor.swift */,
 				40B5810C1DB8B1B700ED06CF /* UserInfoEntity.swift */,
+				40B5810A1DB8AFDD00ED06CF /* UserInfoInteractor.swift */,
+				40B581081DB8AB8300ED06CF /* UserInfoPresenter.swift */,
+				40B581061DB89C8600ED06CF /* UserInfoViewController.swift */,
 			);
 			path = UserInfo;
 			sourceTree = "<group>";
