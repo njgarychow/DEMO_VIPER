@@ -18,6 +18,10 @@
 		40B5810B1DB8AFDD00ED06CF /* UserInfoInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5810A1DB8AFDD00ED06CF /* UserInfoInteractor.swift */; };
 		40B5810D1DB8B1B700ED06CF /* UserInfoEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5810C1DB8B1B700ED06CF /* UserInfoEntity.swift */; };
 		40B5810F1DB8B66500ED06CF /* UserInfoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B5810E1DB8B66500ED06CF /* UserInfoRouter.swift */; };
+		40B581111DB8BE7E00ED06CF /* UserInfoDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B581101DB8BE7E00ED06CF /* UserInfoDetailsPresenter.swift */; };
+		40B581131DB8BECA00ED06CF /* UserInfoDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B581121DB8BECA00ED06CF /* UserInfoDetailsInteractor.swift */; };
+		40B581151DB8BFCB00ED06CF /* UserInfoDetailsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B581141DB8BFCB00ED06CF /* UserInfoDetailsEntity.swift */; };
+		40B581171DB8BFE300ED06CF /* UserInfoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B581161DB8BFE300ED06CF /* UserInfoDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		40B5810A1DB8AFDD00ED06CF /* UserInfoInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoInteractor.swift; sourceTree = "<group>"; };
 		40B5810C1DB8B1B700ED06CF /* UserInfoEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoEntity.swift; sourceTree = "<group>"; };
 		40B5810E1DB8B66500ED06CF /* UserInfoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoRouter.swift; sourceTree = "<group>"; };
+		40B581101DB8BE7E00ED06CF /* UserInfoDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoDetailsPresenter.swift; sourceTree = "<group>"; };
+		40B581121DB8BECA00ED06CF /* UserInfoDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoDetailsInteractor.swift; sourceTree = "<group>"; };
+		40B581141DB8BFCB00ED06CF /* UserInfoDetailsEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoDetailsEntity.swift; sourceTree = "<group>"; };
+		40B581161DB8BFE300ED06CF /* UserInfoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +118,10 @@
 		40B581051DB89C6700ED06CF /* UserInfoDetails */ = {
 			isa = PBXGroup;
 			children = (
+				40B581141DB8BFCB00ED06CF /* UserInfoDetailsEntity.swift */,
+				40B581121DB8BECA00ED06CF /* UserInfoDetailsInteractor.swift */,
+				40B581101DB8BE7E00ED06CF /* UserInfoDetailsPresenter.swift */,
+				40B581161DB8BFE300ED06CF /* UserInfoDetailsViewController.swift */,
 			);
 			path = UserInfoDetails;
 			sourceTree = "<group>";
@@ -188,11 +200,15 @@
 			files = (
 				406391EB1DB74A8000CAF721 /* AppDelegate.swift in Sources */,
 				40B5810B1DB8AFDD00ED06CF /* UserInfoInteractor.swift in Sources */,
+				40B581131DB8BECA00ED06CF /* UserInfoDetailsInteractor.swift in Sources */,
 				40B581091DB8AB8300ED06CF /* UserInfoPresenter.swift in Sources */,
 				40B5810F1DB8B66500ED06CF /* UserInfoRouter.swift in Sources */,
+				40B581151DB8BFCB00ED06CF /* UserInfoDetailsEntity.swift in Sources */,
 				40B5810D1DB8B1B700ED06CF /* UserInfoEntity.swift in Sources */,
 				40B581001DB891AE00ED06CF /* VIPERPresenter.swift in Sources */,
+				40B581111DB8BE7E00ED06CF /* UserInfoDetailsPresenter.swift in Sources */,
 				40B581071DB89C8600ED06CF /* UserInfoViewController.swift in Sources */,
+				40B581171DB8BFE300ED06CF /* UserInfoDetailsViewController.swift in Sources */,
 				40B580FC1DB8619900ED06CF /* VIPERView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
