@@ -12,6 +12,8 @@
 		406391F01DB74A8000CAF721 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406391EE1DB74A8000CAF721 /* Main.storyboard */; };
 		406391F21DB74A8000CAF721 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 406391F11DB74A8000CAF721 /* Assets.xcassets */; };
 		406391F51DB74A8000CAF721 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 406391F31DB74A8000CAF721 /* LaunchScreen.storyboard */; };
+		40B580FC1DB8619900ED06CF /* VIPERView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B580FB1DB8619900ED06CF /* VIPERView.swift */; };
+		40B581001DB891AE00ED06CF /* VIPERPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B580FF1DB891AE00ED06CF /* VIPERPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		406391F11DB74A8000CAF721 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		406391F41DB74A8000CAF721 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		406391F61DB74A8000CAF721 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40B580FB1DB8619900ED06CF /* VIPERView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPERView.swift; sourceTree = "<group>"; };
+		40B580FF1DB891AE00ED06CF /* VIPERPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VIPERPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		406391E91DB74A8000CAF721 /* DEMO_VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				40B580FA1DB770DE00ED06CF /* VIPER */,
 				406391EA1DB74A8000CAF721 /* AppDelegate.swift */,
 				406391EC1DB74A8000CAF721 /* ViewController.swift */,
 				406391EE1DB74A8000CAF721 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				406391F61DB74A8000CAF721 /* Info.plist */,
 			);
 			path = DEMO_VIPER;
+			sourceTree = "<group>";
+		};
+		40B580FA1DB770DE00ED06CF /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				40B580FB1DB8619900ED06CF /* VIPERView.swift */,
+				40B580FF1DB891AE00ED06CF /* VIPERPresenter.swift */,
+			);
+			path = VIPER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +152,8 @@
 			files = (
 				406391ED1DB74A8000CAF721 /* ViewController.swift in Sources */,
 				406391EB1DB74A8000CAF721 /* AppDelegate.swift in Sources */,
+				40B581001DB891AE00ED06CF /* VIPERPresenter.swift in Sources */,
+				40B580FC1DB8619900ED06CF /* VIPERView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +274,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DEMO_VIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.DEMO-VIPER";
@@ -270,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DEMO_VIPER/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.DEMO-VIPER";
@@ -297,6 +315,7 @@
 				406391FB1DB74A8000CAF721 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
