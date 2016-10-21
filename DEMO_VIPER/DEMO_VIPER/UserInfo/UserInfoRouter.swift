@@ -11,7 +11,11 @@ class UserInfoRouter {
     }
     
     func presentUserInfo() {
+        
         let destination = UserInfoViewController()
+        let presenter = UserInfoPresenter()
+        destination.binding(presenter: presenter)
+        
         showViewController(destinationViewController: destination)
     }
     
