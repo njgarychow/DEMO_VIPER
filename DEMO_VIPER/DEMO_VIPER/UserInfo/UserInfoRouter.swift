@@ -13,7 +13,7 @@ class UserInfoRouter {
     func presentUserInfo() {
         
         let destination = UserInfoViewController()
-        let presenter = UserInfoPresenter()
+        let presenter = UserInfoPresenter(router: self)
         destination.binding(presenter: presenter)
         
         showViewController(destinationViewController: destination)

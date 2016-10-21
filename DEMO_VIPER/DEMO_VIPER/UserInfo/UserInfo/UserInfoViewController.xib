@@ -27,7 +27,7 @@
                     <state key="normal" title="Retrive More"/>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="0.089328147631742905" green="1" blue="0.12989649036590467" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="U3d-V7-rVB" secondAttribute="trailing" constant="16" id="4JI-bY-ykh"/>
                 <constraint firstItem="U3d-V7-rVB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="DlT-fN-DUL"/>
