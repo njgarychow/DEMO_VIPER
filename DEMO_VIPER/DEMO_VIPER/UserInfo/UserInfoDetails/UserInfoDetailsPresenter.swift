@@ -1,7 +1,12 @@
 class UserInfoDetailsPresenter: VIPERPresenter {
-    private let interactor: UserInfoInteractor
+    private let interactor: UserInfoDetailsInteractor
     
-    init(interactor: UserInfoInteractor) {
+    init(interactor: UserInfoDetailsInteractor) {
         self.interactor = interactor
+    }
+    
+    convenience init(entity: UserInfoDetailsEntity) {
+        let interactor = UserInfoDetailsInteractor(userInfoDetailsEntity: entity)
+        self.init(interactor: interactor)
     }
 }
