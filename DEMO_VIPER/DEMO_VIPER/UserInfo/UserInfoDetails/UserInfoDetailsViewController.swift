@@ -9,6 +9,6 @@ class UserInfoDetailsViewController: UIViewController, VIPERView {
     }
     
     override func viewDidLoad() {
-        self.binding(presenter: presenter)
+        
     }
 }
