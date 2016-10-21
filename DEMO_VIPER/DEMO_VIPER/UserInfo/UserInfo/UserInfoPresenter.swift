@@ -8,7 +8,7 @@ class UserInfoPresenter: VIPERPresenter {
     
     func retriveUserInfoDetails() {
         weak var strongSelf = self
-        interactor.retriveUserInfoDetails { 
+        interactor.retriveUserInfoDetails { entity in
             strongSelf?.statusDidChanged?()
         }
     }

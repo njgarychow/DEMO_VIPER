@@ -11,9 +11,10 @@ class UserInfoInteractor {
         return user.age
     }
     
-    func retriveUserInfoDetails(callback: (() -> Void)?) {
+    func retriveUserInfoDetails(callback: ((UserInfoDetailsEntity) -> Void)?) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            callback?()
+            let entity = UserInfoDetailsEntity()
+            callback?(entity)
         }
     }
 }
