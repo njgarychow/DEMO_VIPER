@@ -10,6 +10,15 @@ class UserInfoViewController: UIViewController, VIPERView {
 
     func statusDidChanged() {
         userInfoLabel.text = presenter.userInfoDescription
+        
+        switch presenter.loadingStatus {
+        case .Starting:
+            print("starting")
+        case .Stopping:
+            print("stopping")
+        case .None:
+            break
+        }
     }
     
     override func viewDidLoad() {
