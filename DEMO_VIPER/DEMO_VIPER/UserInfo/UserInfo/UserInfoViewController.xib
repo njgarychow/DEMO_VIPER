@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserInfoViewController" customModule="DEMO_VIPER" customModuleProvider="target">
             <connections>
+                <outlet property="loadingStatusLabel" destination="9CK-IQ-Xet" id="ZdZ-l8-cYR"/>
                 <outlet property="retriveUserInfoDetailsButton" destination="TQl-P0-mER" id="6Fp-Jw-xUu"/>
                 <outlet property="userInfoLabel" destination="U3d-V7-rVB" id="Awl-1y-KHD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="4FB-h1-Jnd"/>
@@ -26,15 +27,25 @@
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQl-P0-mER">
                     <state key="normal" title="Retrive More"/>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CK-IQ-Xet">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.089328147631742905" green="1" blue="0.12989649036590467" alpha="1" colorSpace="calibratedRGB"/>
             <constraints>
+                <constraint firstItem="9CK-IQ-Xet" firstAttribute="top" secondItem="TQl-P0-mER" secondAttribute="bottom" constant="44" id="1uy-3i-8lg"/>
                 <constraint firstAttribute="trailing" secondItem="U3d-V7-rVB" secondAttribute="trailing" constant="16" id="4JI-bY-ykh"/>
                 <constraint firstItem="U3d-V7-rVB" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="DlT-fN-DUL"/>
                 <constraint firstItem="TQl-P0-mER" firstAttribute="centerX" secondItem="U3d-V7-rVB" secondAttribute="centerX" id="QyS-ya-2kc"/>
+                <constraint firstAttribute="trailing" secondItem="9CK-IQ-Xet" secondAttribute="trailing" constant="16" id="YdG-iC-CHK"/>
+                <constraint firstItem="9CK-IQ-Xet" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="fjK-ij-jek"/>
                 <constraint firstItem="TQl-P0-mER" firstAttribute="top" secondItem="U3d-V7-rVB" secondAttribute="bottom" constant="35" id="hRT-bf-gfU"/>
                 <constraint firstItem="U3d-V7-rVB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="222" id="quO-0q-Z3B"/>
+                <constraint firstItem="9CK-IQ-Xet" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="seB-9X-WNj"/>
             </constraints>
+            <point key="canvasLocation" x="34.5" y="122.5"/>
         </view>
     </objects>
 </document>

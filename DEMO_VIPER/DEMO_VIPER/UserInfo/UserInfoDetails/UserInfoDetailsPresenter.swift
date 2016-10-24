@@ -12,4 +12,8 @@ class UserInfoDetailsPresenter: VIPERPresenter {
         let interactor = UserInfoDetailsInteractor(userInfoDetailsEntity: entity)
         self.init(interactor: interactor, router: router)
     }
+    
+    var userInfo: String {
+        return "name: \(interactor.userName)\nage: \(interactor.userAge)\nphone number: \(interactor.userPhone)\naddress: \(interactor.userAddress)"
+    }
 }

@@ -4,6 +4,7 @@ class UserInfoViewController: UIViewController, VIPERView {
     
     @IBOutlet weak var userInfoLabel: UILabel!
     @IBOutlet weak var retriveUserInfoDetailsButton: UIButton!
+    @IBOutlet weak var loadingStatusLabel: UILabel!
     
     typealias Presenter = UserInfoPresenter
     var presenter: UserInfoPresenter!
@@ -13,11 +14,11 @@ class UserInfoViewController: UIViewController, VIPERView {
         
         switch presenter.loadingStatus {
         case .Starting:
-            print("starting")
+            loadingStatusLabel.text = "starting loading"
         case .Stopping:
-            print("stopping")
+            loadingStatusLabel.text = "stopping loading"
         case .None:
-            break
+            loadingStatusLabel.text = ""
         }
     }
     

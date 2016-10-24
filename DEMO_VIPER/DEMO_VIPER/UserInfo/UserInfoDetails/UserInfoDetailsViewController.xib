@@ -8,6 +8,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserInfoDetailsViewController" customModule="DEMO_VIPER" customModuleProvider="target">
             <connections>
+                <outlet property="userInfoLabel" destination="Lfj-Xh-BxL" id="1be-l9-wwD"/>
                 <outlet property="view" destination="iN0-l3-epB" id="MId-Gi-sZr"/>
             </connections>
         </placeholder>
@@ -15,7 +16,21 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lfj-Xh-BxL">
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="0.29233427965668723" blue="0.36665329596120477" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Lfj-Xh-BxL" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GKt-uI-ibx"/>
+                <constraint firstAttribute="trailing" secondItem="Lfj-Xh-BxL" secondAttribute="trailing" constant="16" id="oqP-FY-TsX"/>
+                <constraint firstItem="Lfj-Xh-BxL" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="os1-7b-Op2"/>
+                <constraint firstItem="Lfj-Xh-BxL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="rCa-rq-xLt"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
         </view>
     </objects>
 </document>

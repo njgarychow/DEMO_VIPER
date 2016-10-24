@@ -13,7 +13,7 @@ class UserInfoInteractor {
     
     func retriveUserInfoDetails(callback: ((UserInfoDetailsEntity) -> Void)?) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-            let entity = UserInfoDetailsEntity()
+            let entity = UserInfoDetailsEntity(name: "jqzhou", age: 18, phoneNumber: "1561234567890", address: "Sichuan chengdu")
             callback?(entity)
         }
     }
